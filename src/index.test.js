@@ -1,7 +1,13 @@
-import { ExampleComponent } from '.'
+import { FileManager, useFileManager } from '.'
 
-describe('ExampleComponent', () => {
+describe('<FileManager />', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(FileManager).toBeTruthy()
+  })
+})
+
+describe('useFileManager()', () => {
+  it('is truthy', () => {
+    expect(useFileManager).toBeTruthy()
   })
 })
