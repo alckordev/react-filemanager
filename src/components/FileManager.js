@@ -5,7 +5,7 @@ const propTypes = {
   domain: PropTypes.string.isRequired,
   pathdialog: PropTypes.string,
   type: PropTypes.number,
-  crossdomain: PropTypes.number,
+  crossdomain: PropTypes.bool,
   target: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
@@ -15,7 +15,6 @@ const propTypes = {
 const defaultProps = {
   pathdialog: 'filemanager/dialog.php',
   type: 2,
-  crossdomain: 1,
   width: '100%',
   height: 500
 }
