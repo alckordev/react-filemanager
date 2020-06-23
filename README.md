@@ -55,7 +55,35 @@ export default App
 
 ## API Reference
 
+<a name="use-filemanager-hook"></a>
+
 #### `useFileManager()`
+
+A custom React Hook that returns states and helpers for using with [`FileManager`](#filemanager-component) component.
+
+- `isOpen` - is a boolean state indicating whether or not to show the filemanager.
+- `target` - is a string state indicating the input name.
+- `toggle()` - is a trigger function that controls filemanager independent visibility.
+- `handleFileManager(target)` - this function is the one that relates the behavior of the filemanager to the input. Requires that the input name be sent to it.
+
+##### Setting
+
+`useFileManager`, receive an object in the following format:
+
+```jsx
+const [inputValue, setInputValue] = useState('')
+
+const handleChangeInput = (val) => setInputValue(val)
+
+const filemanager = useFileManager({
+  setFieldValue: handleChangeInput
+})
+```
+
+- `setFieldValue` - it is the function that must update the state of the input.
+- `plugin` - it is not necessary to define it. Currently, you can assign the value `formik` to indicate to the hook that it should be integrated with [`formik`](https://jaredpalmer.com/formik/), in case it is assigned the value `formik`, please note that `setFieldValue` must also be [`formik`](https://jaredpalmer.com/formik/).
+
+<a name="filemanager-component"></a>
 
 #### `<FileManager />`
 
@@ -133,7 +161,7 @@ For example to enable the cross-domain file selector, you must set `crossdomain`
 
 #### target (required)
 
-The value of `target` is obtained through the hook [`useFileManager`](#use-file-manager-hook).
+The value of `target` is obtained through the hook [`useFileManager`](#use-filemanager-hook).
 
 ```jsx
 const filemanager = useFileManager({
@@ -151,7 +179,7 @@ const filemanager = useFileManager({
 
 #### isOpen (required)
 
-The value of `isOpen` is obtained through the hook [`useFileManager`](#use-file-manager-hook).
+The value of `isOpen` is obtained through the hook [`useFileManager`](#use-filemanager-hook).
 
 ```jsx
 const filemanager = useFileManager({
@@ -165,10 +193,12 @@ const filemanager = useFileManager({
 />
 ```
 
+## Examples
+
+- [Basic](aaaaa)
+- [Integration with formik](aaaaaa)
+- [Only filemanager control](aaaa)
+
 ## License
 
-MIT © [alckor127](https://github.com/alckor127)
-
-```
-
-```
+MIT © [Alckor127](https://github.com/alckor127) 2020

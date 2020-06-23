@@ -19,8 +19,14 @@ const App = () => {
         onFocus={() => filemanager.handleFilemanager('image')}
         readOnly
       />
+
+      <button type='button' onClick={filemanager.toggle}>
+        Toggle
+      </button>
+
       <FileManager
-        domain='http://devfran.com'
+        domain='https://www.responsivefilemanager.com'
+        crossdomain
         target={filemanager.target}
         isOpen={filemanager.isOpen}
       />

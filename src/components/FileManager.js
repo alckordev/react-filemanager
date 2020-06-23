@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const propTypes = {
   domain: PropTypes.string.isRequired,
   pathdialog: PropTypes.string,
-  type: PropTypes.number,
+  type: PropTypes.oneOf([1, 2, 3]),
   crossdomain: PropTypes.bool,
   target: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
@@ -36,7 +36,9 @@ const FileManager = ({
       title='File Manager'
       width={width}
       height={height}
-      src={`${domain}/${pathdialog}?type=${type}&field_id=${target}&crossdomain=${crossdomain}`}
+      src={`${domain}/${pathdialog}?type=${type}&field_id=${target}${
+        crossdomain ? '&crossdomain=1' : ''
+      }`}
       frameBorder='0'
     />
   )

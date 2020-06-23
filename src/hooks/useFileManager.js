@@ -10,6 +10,8 @@ const useFileManager = ({ setFieldValue, plugin }) => {
     }
   }, [])
 
+  const toggle = () => setIsOpen(!isOpen)
+
   const handleFilemanager = (target) => {
     setTarget(target)
     setIsOpen(true)
@@ -34,7 +36,7 @@ const useFileManager = ({ setFieldValue, plugin }) => {
     }
   }
 
-  return { isOpen, target, handleFilemanager }
+  return { isOpen, target, handleFilemanager, toggle }
 }
 
 export { useFileManager }
