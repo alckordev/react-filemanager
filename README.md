@@ -6,7 +6,7 @@ Using as stand-alone responsive filemanager for react &#128293;.
 
 ## Requirements
 
-Before starting using `react-filemanager`; download, install and configure responsive filemanager on an `apache server`.
+Before starting using `react-filemanager`; download, install and configure responsive filemanager on an apache server.
 
 - [Download](https://www.responsivefilemanager.com/index.php#download-section)
 - [Documentation](https://www.responsivefilemanager.com/index.php#documentation-section)
