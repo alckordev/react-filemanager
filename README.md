@@ -2,7 +2,7 @@
 
 Using as stand-alone responsive filemanager for react &#128293;.
 
-[![NPM](https://img.shields.io/npm/v/react-filemanager.svg)](https://www.npmjs.com/package/react-filemanager) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-filemanager.svg)](https://www.npmjs.com/package/@alckor127/react-filemanager) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Requirements
 
@@ -14,7 +14,7 @@ Before starting using `react-filemanager`; download, install and configure respo
 ## Install
 
 ```bash
-npm install --save react-filemanager
+npm install --save @alckor127/react-filemanager
 ```
 
 ## Usage

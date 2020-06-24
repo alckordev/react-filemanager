@@ -1,10 +1,13 @@
 {
-  "name": "react-filemanager",
+  "name": "@alckor127/react-filemanager",
   "version": "1.0.0",
   "description": "Hooks for using responsivefilemanager.js in React",
   "author": "alckor127",
   "license": "MIT",
-  "repository": "alckor127/react-filemanager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alckor127/react-filemanager.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -54,5 +57,18 @@
   ],
   "dependencies": {
     "prop-types": "^15.7.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/alckor127/react-filemanager/issues"
+  },
+  "homepage": "https://github.com/alckor127/react-filemanager#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "responsivefilemanager",
+    "filemanager"
+  ]
 }
