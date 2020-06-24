@@ -1,7 +1,7 @@
 {
   "name": "@alckor127/react-filemanager",
-  "version": "1.0.1",
-  "description": "Hooks for using responsivefilemanager.js in React",
+  "version": "1.0.2",
+  "description": "Using as stand-alone responsive filemanager for react",
   "author": "alckor127",
   "license": "MIT",
   "repository": {
