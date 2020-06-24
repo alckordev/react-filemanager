@@ -151,7 +151,7 @@ For example to enable the cross-domain file selector, you must set `crossdomain`
 ```jsx
 <FileManager
   domain='https://www.responsivefilemanager.com'
-  crossdomain={true}
+  crossdomain
   target={filemanager.target} // useFileManager() return this value.
   isOpen={filemanager.isOpen} // useFileManager() return this value.
 />
