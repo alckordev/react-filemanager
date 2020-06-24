@@ -13,13 +13,14 @@ const App = () => {
   return (
     <div>
       <input
+        placeholder='https://...'
         type='text'
         name='image'
         value={inputValue}
         onFocus={() => filemanager.handleFilemanager('image')}
-        readOnly
+        onBlur={filemanager.toggle}
+        readOnly // is recommended but not necessary
       />
-
       <button type='button' onClick={filemanager.toggle}>
         Toggle
       </button>

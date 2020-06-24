@@ -17,6 +17,12 @@ Before starting using `react-filemanager`; download, install and configure respo
 npm install --save @alckor127/react-filemanager
 ```
 
+or
+
+```bash
+yarn add @alckor127/react-filemanager
+```
+
 ## Usage
 
 ```jsx
@@ -195,9 +201,10 @@ const filemanager = useFileManager({
 
 ## Examples
 
-- [Basic](aaaaa)
-- [Integration with formik](aaaaaa)
-- [Only filemanager control](aaaa)
+- [Basic](https://codesandbox.io/s/basic-ofp24)
+- [Only filemanager control](https://codesandbox.io/s/only-filemanager-control-ch8bc)
+- [Integration with formik](https://codesandbox.io/s/integration-with-formik-hdz8d)
+- [Use modal from reacstrap](https://codesandbox.io/s/use-modal-from-reactstrap-0wo3r)
 
 ## License
 
